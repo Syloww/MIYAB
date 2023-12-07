@@ -15,10 +15,12 @@ a{
     color: #000;
 }
 /* ***************************************************************** */
-footer{
+footer {
     position: fixed;
     bottom: 0;
+    left: 50%;
     width: 350px;
+    transform: translateX(-50%);
     justify-content: space-evenly;
     border-radius: 20px;
     background-color: #95f5fe;
