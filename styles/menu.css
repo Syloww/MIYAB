@@ -15,6 +15,25 @@ a{
     color: #000;
 }
 /* ***************************************************************** */
+.searchbar{
+    margin: 10px;
+    justify-content: center;
+    display: flex;
+    padding: 7px;
+    gap: 15px;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+}
+input{
+    outline: none;
+    color: #95f5fe;
+    font-weight: bold;
+    border-width: 0px;
+    background-color: #1e1e1e;
+}
+/* ***************************************************************** */
+
+/* ***************************************************************** */
 footer {
     position: fixed;
     bottom: 0;
