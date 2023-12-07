@@ -10,7 +10,10 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.para{
+    display: flex;
+    justify-content: space-between;
+}
 .info {
     padding: 60px;
     display: flex;
@@ -38,7 +41,7 @@ body {
 
 button {
     position: relative;
-    padding: 15px 45px;
+    padding: 25px 45px;
     background: #95f5fe;
     font-size: 17px;
     font-weight: 500;
