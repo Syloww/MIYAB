@@ -26,8 +26,18 @@ a{
     color: #FFF;
     text-align: center;
     gap: 20px;
+    animation: fondu 3s ease-in-out;
 }
-
+/* ******************************************** */
+@keyframes fondu {
+    from {
+        opacity: 0; /* Opacité initiale à 0 */
+    }
+    to {
+        opacity: 1; /* Opacité finale à 1 */
+    }
+}
+/* ******************************************** */
 .pp {
     width: 130px;
     border-radius: 100%;
