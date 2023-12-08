@@ -13,6 +13,10 @@ a{
     text-decoration: none;
     color: #000;
 }
+span{
+    color: #95f5fe;
+    font-weight: bold;
+}
 /* ***************************************************************** */
 .searchbar{
     margin: 10px;
@@ -169,7 +173,35 @@ button:hover .icon-3 {
     padding: 5px;
 }
 /* ***************************************************************** */
+.post{
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #1e1e1e;
+}
+.info{
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+}
+.nom{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+.spe{
+    font-weight: bold;
+    color: #c2c2c2;
+}
+.descri{
+    color: #c2c2c2;
+    font-style: italic;
+}
 
+/* ********************************************************************* */
 footer {
     position: fixed;
     bottom: 0;
