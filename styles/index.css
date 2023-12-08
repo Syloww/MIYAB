@@ -7,7 +7,6 @@ body {
     background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
         linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
     background-size: 55px 55px;
-
     font-family: Arial, Helvetica, sans-serif;
 }
 a{
@@ -19,6 +18,13 @@ a{
     display: flex;
     justify-content: space-between;
 }
+.fond{
+    background: none; /* Retire le fond */
+    border: none; /* Retire la bordure */
+    padding: 10px 20px; /* Ajoutez du rembourrage si nécessaire */
+    color: #fff; /* Couleur du texte */
+    cursor: pointer;
+}
 .info {
     padding: 60px;
     display: flex;
@@ -26,7 +32,7 @@ a{
     color: #FFF;
     text-align: center;
     gap: 20px;
-    animation: fondu 3s ease-in-out;
+    animation: fondu 1.5s ease-in-out;
 }
 /* ******************************************** */
 @keyframes fondu {
@@ -54,7 +60,7 @@ a{
     justify-content: space-evenly;
 }
 
-button {
+.feuille {
     position: relative;
     padding: 25px 45px;
     background: #95f5fe;
@@ -66,7 +72,7 @@ button {
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .2));
 }
 
-button:hover {
+.feuille:hover {
     border: 1px solid #95f5fe;
     background: linear-gradient(85deg, #57f1ff, #95f5fe, #95f5fe, #95f5fe, #57f1ff);
     animation: wind 2s ease-in-out infinite;
@@ -97,7 +103,7 @@ button:hover {
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .3));
 }
 
-button:hover .icon-1 {
+.feuille:hover .icon-1 {
     animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
     transform: rotate(10deg);
 }
@@ -127,7 +133,7 @@ button:hover .icon-1 {
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
 }
 
-button:hover .icon-2 {
+.feuille:hover .icon-2 {
     animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
     transform: rotate(0);
 }
@@ -157,7 +163,7 @@ button:hover .icon-2 {
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
 }
 
-button:hover .icon-3 {
+.feuille:hover .icon-3 {
     animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
     transform: rotate(0);
 }
@@ -225,7 +231,7 @@ footer {
     width: 350px;
     transform: translateX(-50%);
     justify-content: space-evenly;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: #95f5fe;
     display: flex;
     padding: 20px;
