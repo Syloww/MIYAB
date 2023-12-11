@@ -17,13 +17,10 @@ function Projet() {
     let liste2 = '';
 
     for (let categorie of PROJET) {
-        liste2 += '<a href=""><div class="allpost">'+'<div class="post">'+'<div class="info">'+'<div class="nom">' + categorie["titre"] + '</div>';
-        liste2 += '<div class="descri">' + categorie["description"] + '</div>';
-        liste2 += '<div class="nom">' + '<span>Budget:</span> ' + categorie["budget"] + '</div>';
-        liste2 += '<div class="spe">' + '<span>Date limite:</span> ' + categorie["date_limite"] + '</div>';
+        liste2 += '<a href=""><div class="post"><div class="info"><div class="nom">' + categorie["titre"]+'</div><div class="descri">' + categorie["description"] + '</div><div class="nom"><span>Budget:</span> ' + categorie["budget"] + '</div>';
+        liste2 += '<div class="spe"><span>Date limite:</span> ' + categorie["date_limite"] + '</div>';
         liste2 += '<div class="spe">' + '<span>Compétences requises:</span> ' + categorie["competences_requises"].join(', ') + '</div>';
-        liste2 += '<div class="nom">' + '<span>Contact:</span> ' + categorie["contact"] + '</div>';
-        liste2 += '</div>+</div></div></a>';
+        liste2 += '<div class="nom">' + '<span>Contact:</span> ' + categorie["contact"] + '</div></div></div></a>';
     }
 
     document.querySelector(".allpost").innerHTML = liste2;
