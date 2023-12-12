@@ -20,7 +20,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Mettre à jour l'image avec la classe "pp" dans le fichier profil.html
     if (selectedAccount && profilePictureElement) {
-        const profilePictureSrc = comptes[selectedAccount] ? comptes[selectedAccount].profilePicture : "";
+        let profilePictureSrc = comptes[selectedAccount] ? comptes[selectedAccount].profilePicture : "";
+
+        // Utiliser l'image par défaut si profilePictureSrc est une chaîne vide ou non définie
+        if (!profilePictureSrc) {
+            profilePictureSrc = "../profil_pp/default.png"; // Assurez-vous que le chemin est correct
+        }
+
         profilePictureElement.src = profilePictureSrc;
     }
 });

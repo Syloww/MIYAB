@@ -1,7 +1,7 @@
 const comptes = {
     "Sylow_prod": {
         "profilePicture": "profil_pp/sylow.jpg",
-        "bio": "MMMhhh, juste une bio ! Afficher en JS grâce à une DATA",
+        "bio": "🍓MMI🍍Monteur / front end / cadreur 🥥 Création numérique / sport",
         "posts": [
             {
                 "image": "images_post/sylow_prod_1.jpg",
@@ -15,7 +15,7 @@ const comptes = {
     },
     "tom_zarpellon": {
         "profilePicture": "profil_pp/tom.jpg",
-        "bio": "j'aime le vélo plus que les femmes.",
+        "bio": "J'aime le vélo plus que les femmes.",
         "posts": [
             {
                 "image": "images_post/tom_zarpellon_1.jpg",
@@ -28,8 +28,8 @@ const comptes = {
         ],
     },
     "lisehml05": {
-        "profilePicture": "profil_pp/lisehml05_pp.jpg",
-        "bio": "MMMhhh, juste une bio ! Afficher en JS grâce à une DATA",
+        "profilePicture": "",
+        "bio": "hi ◡̈",
         "posts": [
             {
                 "image": "images_post/lisehml05_1.jpg",
@@ -42,7 +42,7 @@ const comptes = {
         ],
     },
     "Emile": {
-        "profilePicture": "profil_pp/emile_pp.jpg",
+        "profilePicture": "",
         "bio": "je mog tout le monde.",
         "posts": [
             {
@@ -56,7 +56,7 @@ const comptes = {
         ],
     },
     "Husein": {
-        "profilePicture": "profil_pp/husein_pp.jpg",
+        "profilePicture": "",
         "bio": "j'aime les femmes",
         "posts": [
             {
@@ -70,7 +70,7 @@ const comptes = {
         ],
     },
     "lu_lupr": {
-        "profilePicture": "profil_pp/lucie_pp.jpg",
+        "profilePicture": "",
         "bio": "Etudiante en BUT MMI / Compte insta photo : @luci2ol_",
         "posts": [
             {
@@ -84,7 +84,7 @@ const comptes = {
         ],
     },
     "luci2ol_": {
-        "profilePicture": "profil_pp/lucie_pp.jpg",
+        "profilePicture": "",
         "bio": "Photographe",
         "posts": [
             {
@@ -98,7 +98,7 @@ const comptes = {
         ],
     },
     "Alexandre": {
-        "profilePicture": "profil_pp/alexandre_pp.jpg",
+        "profilePicture": "",
         "bio": "Passionné de cuisine et de voyages.",
         "posts": [
             {
