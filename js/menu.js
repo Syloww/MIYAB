@@ -26,4 +26,38 @@ function Projet() {
 
 }
 
+// ******************************************************
 
+// Fonction pour mélanger aléatoirement un tableau
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+function displayRandomItems(data, className) {
+    const shuffledData = shuffleArray(data);
+    let liste = '';
+
+    for (let item of shuffledData) {
+        liste += `<div class="${className}">`;
+        liste += '<div class="post">';
+        liste += '<div class="info">';
+        liste += `<div class="nom">${item["nom"]}</div>`;
+        liste += `<div class="spe">${item["specialite"]}</div>`;
+        liste += `<div class="tarif"><span>${item["tarif"]}</span></div>`;
+        liste += `<div class="descri">${item["description"]}</div>`;
+        liste += '</div>';
+        liste += '</div>';
+        liste += '</div>';
+    }
+
+    document.querySelector(".allpost").innerHTML = liste;
+}
+
+// Utilisation pour afficher aléatoirement les freelancers
+displayRandomItems(Object.values(freelancers["photographes"]), "photographe");
+displayRandomItems(Object.values(freelancers["videastes"]), "videaste");
+displayRandomItems(Object.values(freelancers["monteurs"]), "monteur");
