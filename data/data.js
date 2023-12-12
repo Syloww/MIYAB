@@ -28,7 +28,7 @@ const comptes = {
         ],
     },
     "Arthur": {
-        "profilePicture": "profil_pp/tom.jpg",
+        "profilePicture": "",
         "bio": "J'aime le vélo plus que les femmes.",
         "posts": [
             {
@@ -42,7 +42,7 @@ const comptes = {
         ],
     },
     "Sacha": {
-        "profilePicture": "profil_pp/tom.jpg",
+        "profilePicture": "",
         "bio": "J'aime le vélo plus que les femmes.",
         "posts": [
             {
@@ -56,7 +56,7 @@ const comptes = {
         ],
     },
     "Mattéo": {
-        "profilePicture": "profil_pp/tom.jpg",
+        "profilePicture": "",
         "bio": "J'aime le vélo plus que les femmes.",
         "posts": [
             {
@@ -70,7 +70,7 @@ const comptes = {
         ],
     },
     "Manon": {
-        "profilePicture": "profil_pp/tom.jpg",
+        "profilePicture": "",
         "bio": "J'aime le vélo plus que les femmes.",
         "posts": [
             {
@@ -168,4 +168,10 @@ const comptes = {
         ],
     },
     // Ajoutez autant de comptes que nécessaire
+};
+const identifiant = {
+    "Sylow_prod": {
+        "utilisateur": "sylow",
+        "mdp": "1234",
+    },
 };
