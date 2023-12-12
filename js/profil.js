@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Utiliser l'image par défaut si profilePictureSrc est une chaîne vide ou non définie
         if (!profilePictureSrc) {
-            profilePictureSrc = "../profil_pp/default.png"; // Assurez-vous que le chemin est correct
+            profilePictureSrc = "./profil_pp/default.png"; // Assurez-vous que le chemin est correct
         }
 
         profilePictureElement.src = profilePictureSrc;
