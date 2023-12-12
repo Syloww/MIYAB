@@ -1,11 +1,12 @@
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
+const pseudoElement = document.querySelector('.pseudo');
 
 searchInput.addEventListener('input', updateResults);
 
 function updateResults() {
     const searchTerm = searchInput.value.toLowerCase();
-    
+
     // Vérifier si l'input est vide
     if (searchTerm.trim() === '') {
         // Cacher la liste de résultats si l'input est vide
@@ -24,7 +25,7 @@ function displayResults(results) {
     results.forEach(result => {
         const listItem = document.createElement('li');
         listItem.textContent = result;
-        listItem.addEventListener('click', () => displayBio(result));
+        listItem.addEventListener('click', () => displayProfile(result));
         searchResults.appendChild(listItem);
 
         // Ajouter une animation de déroulement (fade-in)
@@ -37,7 +38,16 @@ function displayResults(results) {
     searchResults.style.opacity = 1;
 }
 
-function displayBio(account) {
-    const bio = comptes[account].bio;
-    alert(bio);
+function displayProfile(account) {
+    // Rediriger vers profil.html avec le compte sélectionné
+    window.location.href = `profil.html?account=${account}`;
+}
+
+// Récupérer le nom du compte dans le fichier profil.html
+const params = new URLSearchParams(window.location.search);
+const selectedAccount = params.get('account');
+
+// Mettre à jour le texte avec la classe "pseudo" dans le fichier profil.html
+if (selectedAccount && pseudoElement) {
+    pseudoElement.textContent = selectedAccount;
 }
