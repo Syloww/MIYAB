@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const pseudoElement = document.querySelector('.pseudo');
     const bioElement = document.querySelector('.bio');
+    const profilePictureElement = document.querySelector('.pp');
 
     // Récupérer le nom du compte dans le fichier profil.html
     const params = new URLSearchParams(window.location.search);
@@ -15,5 +16,11 @@ document.addEventListener("DOMContentLoaded", function() {
     if (selectedAccount && bioElement) {
         const bioText = comptes[selectedAccount] ? comptes[selectedAccount].bio : "Biographie non disponible";
         bioElement.textContent = bioText;
+    }
+
+    // Mettre à jour l'image avec la classe "pp" dans le fichier profil.html
+    if (selectedAccount && profilePictureElement) {
+        const profilePictureSrc = comptes[selectedAccount] ? comptes[selectedAccount].profilePicture : "";
+        profilePictureElement.src = profilePictureSrc;
     }
 });

@@ -1,6 +1,6 @@
 const comptes = {
     "Sylow_prod": {
-        "profilePicture": "profil_pp/sylow_prod_pp.jpg",
+        "profilePicture": "profil_pp/sylow.jpg",
         "bio": "MMMhhh, juste une bio ! Afficher en JS grâce à une DATA",
         "posts": [
             {
@@ -14,7 +14,7 @@ const comptes = {
         ],
     },
     "tom_zarpellon": {
-        "profilePicture": "profil_pp/tom_zarpellon_pp.jpg",
+        "profilePicture": "profil_pp/tom.jpg",
         "bio": "j'aime le vélo plus que les femmes.",
         "posts": [
             {
