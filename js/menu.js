@@ -1,4 +1,3 @@
-let recherche = document.querySelector("#search").value;
 
 function Freelance() {
     document.querySelector(".titrepage").innerHTML = "Freelance";

@@ -14,7 +14,14 @@ function updateResults() {
         return;
     }
 
-    const results = Object.keys(comptes).filter(account => account.toLowerCase().includes(searchTerm));
+    const results = Object.keys(comptes)
+        .filter(account => account.toLowerCase().includes(searchTerm))
+        .sort((a, b) => {
+            const indexA = a.toLowerCase().indexOf(searchTerm);
+            const indexB = b.toLowerCase().indexOf(searchTerm);
+
+            return indexA - indexB;
+        });
 
     displayResults(results);
 }
