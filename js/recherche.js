@@ -1,6 +1,7 @@
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
 const pseudoElement = document.querySelector('.pseudo');
+const MAX_RESULTS = 4; // Nombre maximal de résultats à afficher
 
 searchInput.addEventListener('input', updateResults);
 
@@ -23,7 +24,7 @@ function updateResults() {
             return indexA - indexB;
         });
 
-    displayResults(results);
+    displayResults(results.slice(0, MAX_RESULTS)); // Limiter les résultats affichés
 }
 
 function displayResults(results) {
