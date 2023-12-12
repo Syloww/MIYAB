@@ -27,6 +27,20 @@ const comptes = {
             },
         ],
     },
+    "isf_so": {
+        "profilePicture": "",
+        "bio": "Musculation.",
+        "posts": [
+            {
+                "image": "images_post/tom_zarpellon_1.jpg",
+                "description": "Exploration en montagne.",
+            },
+            {
+                "image": "images_post/tom_zarpellon_2.jpg",
+                "description": "Rencontre avec de nouvelles cultures.",
+            },
+        ],
+    },
     "Arthur": {
         "profilePicture": "",
         "bio": "J'aime le vélo plus que les femmes.",
