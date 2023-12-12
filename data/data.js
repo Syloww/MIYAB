@@ -28,7 +28,7 @@ const comptes = {
         ],
     },
     "lisehml05": {
-        "profilePicture": "",
+        "profilePicture": "profil_pp/lise.jpeg",
         "bio": "hi ◡̈",
         "posts": [
             {
