@@ -126,7 +126,7 @@ const comptes = {
         ],
     },
     "lu_lupr": {
-        "profilePicture": "images_post/lucile.jpg",
+        "profilePicture": "profil_pp/lucile.jpg",
         "bio": "Etudiante en BUT MMI / Compte insta photo : @luci2ol_",
         "posts": [
             {
@@ -140,7 +140,7 @@ const comptes = {
         ],
     },
     "luci2ol_": {
-        "profilePicture": "images_post/lucile.jpg",
+        "profilePicture": "profil_pp/lucile.jpg",
         "bio": "Photographe",
         "posts": [
             {
