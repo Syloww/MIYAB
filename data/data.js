@@ -69,9 +69,23 @@ const comptes = {
             },
         ],
     },
-    "Lucie": {
+    "lu_lupr": {
         "profilePicture": "profil_pp/lucie_pp.jpg",
-        "bio": "Amoureuse de la nature et des animaux.",
+        "bio": "Etudiante en BUT MMI / Compte insta photo : @luci2ol_",
+        "posts": [
+            {
+                "image": "images_post/lucie_1.jpg",
+                "description": "Randonnée en montagne.",
+            },
+            {
+                "image": "images_post/lucie_2.jpg",
+                "description": "Journée détente au parc.",
+            },
+        ],
+    },
+    "luci2ol_": {
+        "profilePicture": "profil_pp/lucie_pp.jpg",
+        "bio": "Photographe",
         "posts": [
             {
                 "image": "images_post/lucie_1.jpg",

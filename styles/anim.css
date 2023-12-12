@@ -24,9 +24,9 @@ span{
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
-
 .hidden {
     opacity: 0;
+    text-align: center;
     animation: fadeIn 2s 1s forwards;
 }
 
