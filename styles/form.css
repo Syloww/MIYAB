@@ -19,6 +19,41 @@ body {
 span{
     color: #95f5fe;
 }
+/* ************************************************************ */
+.notification {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px); /* Position initiale en dehors de l'écran */
+  background-color: #95f5fe; /* Couleur de fond pour une notification d'erreur */
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.notification.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Animation de pop-up */
+@keyframes popUp {
+  0% {
+      transform: translateX(-50%) translateY(-20px);
+  }
+  100% {
+      transform: translateX(-50%) translateY(0);
+  }
+}
+
+.notification.pop-up {
+  animation: popUp 0.5s ease-in-out;
+}
 /* ******************************************** */
 .form {
     margin: 20px;
@@ -31,11 +66,6 @@ span{
     background-color: #171717;
     border-radius: 25px;
     transition: .4s ease-in-out;
-  }
-  
-  .form:hover {
-    transform: scale(1.05);
-    border: 1px solid black;
   }
   
   #heading {

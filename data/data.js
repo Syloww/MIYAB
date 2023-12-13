@@ -183,9 +183,3 @@ const comptes = {
     },
     // Ajoutez autant de comptes que nécessaire
 };
-const identifiant = {
-    "Sylow_prod": {
-        "utilisateur": "sylow",
-        "mdp": "1234",
-    },
-};
