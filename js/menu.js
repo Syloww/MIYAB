@@ -9,7 +9,7 @@ function Freelance() {
         }
     }
     document.querySelector(".allpost").innerHTML = liste2
-}
+}bz
 function Projet() {
     document.querySelector(".titrepage").innerHTML = "Projet";
     document.querySelector(".allpost").innerHTML = ""
